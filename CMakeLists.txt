@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11")
+project(StereoVision)
+find_package(OpenCV REQUIRED)
+add_executable(StereoVision main.cxx loopy_belief_propagation.cxx loopy_belief_propagation.h)
+target_link_libraries(StereoVision ${OpenCV_LIBS})
