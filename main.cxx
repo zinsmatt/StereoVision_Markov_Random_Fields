@@ -102,6 +102,8 @@ int main()
 {
   cv::Mat image_l = cv::imread("../data/tsukuba/scene1.row3.col1.ppm");
   cv::Mat image_r = cv::imread("../data/tsukuba/scene1.row3.col2.ppm");
+//  cv::Mat image_l = cv::imread("../data/data_stereo/left/000002.png");
+//  cv::Mat image_r = cv::imread("../data/data_stereo/right/000002.png");
 
   // convert to grayscale images
   cv::Mat image_l_grey, image_r_grey;
